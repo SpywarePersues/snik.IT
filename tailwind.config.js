@@ -10,5 +10,8 @@ module.exports = {
       "Koho": 'KoHo',
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+    // ...
+  ]
 }

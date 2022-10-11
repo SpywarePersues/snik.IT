@@ -1,10 +1,11 @@
-const data = {
+export const ShoeData = {
     products: [
         {
             name: 'Snik 100D',
             image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029403189616844861/unknown.png',
             key: 'snik-100d',
             price: '1699',
+            rating: '4.5',
             category: 'Unisex'
             },
             {
@@ -12,6 +13,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029403317836713984/unknown.png',
                 key: 'snik-f-25',
                 price: '1199',
+                rating: '4.8',
                 category: 'Men'
             },
             {
@@ -19,6 +21,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029404533236973668/unknown.png',
                 key: 'snik-f-27',
                 price: '1299',
+                rating: '4.2',
                 category: 'Women'
             },
             {
@@ -26,6 +29,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029403709639229511/unknown.png',
                 key: 'snik-75l',
                 price: '999',
+                rating: '4.9',
                 category: 'Unisex, Kids'
             },
             {
@@ -33,6 +37,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029404174703661166/unknown.png',
                 key: 'snik-k-22',
                 price: '1799',
+                rating: '4.4',
                 category: 'Women'
             },
             {
@@ -40,6 +45,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029405251377311855/unknown.png',
                 key: 'snik-f-11',
                 price: '1199',
+                rating: '4.5',
                 category: 'Men, Kids'
             },
             {
@@ -47,6 +53,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029405591233368105/unknown.png',
                 key: 'snik-1p',
                 price: '2199',
+                rating: '4.7',
                 category: 'Unisex, Kids'
             },
             {
@@ -54,6 +61,7 @@ const data = {
                 image: 'https://cdn.discordapp.com/attachments/910730837996224584/1029406327480524871/unknown.png',
                 key: 'snik-n-9',
                 price: '1499',
+                rating: '4.1',
                 category: 'Unisex'
             },
             {
