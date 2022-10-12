@@ -42,7 +42,7 @@ export default function ProductsSlider(){
                             <div key={data.key} className="glassmorph inline-block p-2 cursor-pointer w-64 lg:w-96 mx-3">
                                 <img src={data.image} className="w-15 lg:w-32 mx-auto h-32" alt=""/>
                                 <div className="font-Koho px-5">
-                                    <p className="flex"><AiFillStar fill="orange" size={24}/> <span>4.5</span></p>
+                                    <p className="flex"><AiFillStar fill="orange" size={24}/> <span>{data.rating}</span></p>
                                     <p>{data.name}</p>
                                     <div className="flex justify-between">
                                     <p>₹{data.price}</p>
