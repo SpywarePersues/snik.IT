@@ -15,7 +15,7 @@
 
 ## Installation :wrench:
 
-1. Clone this repo by running `git clone https://github.com/JadugarKalakaboola/maple.git` or manually install the zip folder.
+1. Clone this repo by running `git clone https://github.com/SpywarePersues/snik.IT.git` or manually install the zip folder.
 2. `cd snik.it`
 3. `npm install or npm install --force or npm instal --legacy-peer-deps`
 4. `npm run dev`
