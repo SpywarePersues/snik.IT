@@ -2,8 +2,9 @@ import React from 'react'
 import ContainerBlock from '../components/ContainerBlock'
 import { ShoeData } from "../utils/data"
 import {AiFillStar} from 'react-icons/ai'
+import Link from 'next/link'
 
-function products() {
+function products({ shoes }) {
     return (
         <ContainerBlock title="Products">
             <h1 className='pb-[1rem] text-4xl text-center pt-[1rem]'>Products</h1>
@@ -18,11 +19,13 @@ function products() {
                                         <p>{data.name}</p>
                                         <div className="flex justify-between">
                                         <p>₹{data.price}</p>
-                                        <button class="inline-flex text-sm items-center justify-center p-0.5 overflow-hidden font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                                            <a href={`/${data.key}`} class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                        <Link href={{pathname: '/sneakers/'+data.key}}>
+                                            <button class="inline-flex text-sm items-center justify-center p-0.5 overflow-hidden font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
+                                            <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                                                 Discover
-                                            </a> 
-                                        </button>
+                                            </span> 
+                                            </button>
+                                        </Link>
                                         </div>
                                     </div>
                                 </div>
