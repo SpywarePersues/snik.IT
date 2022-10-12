@@ -22,7 +22,7 @@ export default function Home() {
           <img src='./landing-shoe.png' className=' mx-auto lg:w-9/12 w-11/12'/>
         </div>
       </div>
-      <div>
+      <div className='px-5'>
         <ProductsSlider></ProductsSlider>
       </div>
       <div className='bg-[url("../public/sneakers-bg.png")] h-[400px] bg-cover font-Koho'>
