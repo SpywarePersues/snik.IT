@@ -2,34 +2,28 @@ import React from 'react'
 import ContainerBlock from '../components/ContainerBlock'
 import { ShoeData } from "../utils/data"
 import {AiFillStar} from 'react-icons/ai'
+import ProductsSlider from '../components/ProductsSlider'
 
 function newArrivals() {
     return (
         <ContainerBlock title="New Arrivals">
-            <h1 className='pb-[1rem] text-4xl text-center pt-[1rem]'>New Arrivals</h1>
-            <div className='m-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
-                {
-                        ShoeData.new.map((data) => {
-                            return(
-                                <div key={data.key} className="glassmorph inline-block p-10 cursor-pointer w-70 lg:w-96 m-3">
-                                    <img src={data.image} className="w-15 lg:w-32 mx-auto h-32" alt=""/>
-                                    <div className="font-Koho px-5">
-                                        <p className="flex"><AiFillStar fill="orange" size={24}/> <span>{data.rating}</span></p>
-                                        <p>{data.name}</p>
-                                        <div className="flex justify-between">
-                                        <p>₹{data.price}</p>
-                                        <button class="inline-flex text-sm items-center justify-center p-0.5 overflow-hidden font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800">
-                                            <a href={`/${data.key}`} class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                                Discover
-                                            </a> 
-                                        </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
-                        })
-                    }
+            <p className='text-orange-500 lg:text-7xl font-Koho font-bold text-center py-12'>Arriving Soon!</p>
+            <p className='text-yellow-600 lg:text-5xl font-Koho font-bold text-center'>Snik-Goldchamp-A</p>
+            <img src='./gold-shoe.png' className='lg:w-6/12 mx-auto'/>
+            <div className='lg:w-10/12 mx-auto py-28 lg:flex'>
+                <div className='lg:w-5/12 font-bold lg:text-5xl text-orange-500 font-Koho flex flex-col justify-center'>
+                    This Diwali get your amazing self designed sneakers.
                 </div>
+                <div>
+                    <video autoPlay loop className='w-[500px] lg:w-[700px]'>
+                        <source src="./customize.mp4" />
+                    </video>
+                </div>
+            </div>
+            <div className=''>   
+                <p className='lg:px-10 text-yellow-600 font-bold text-5xl font-Koho'>Trending Now!</p>
+                <ProductsSlider></ProductsSlider>
+            </div>
         </ContainerBlock>
     )
 }
